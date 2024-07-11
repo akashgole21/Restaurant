@@ -19,7 +19,7 @@ class RestaurantCreate extends Component {
 
 
   create() {
-    fetch('http://localhost:3000/restaurant', {
+    fetch('https://akashgole21.github.io/restaurant', {
       method: "Post",
       headers: {
         'Content-Type': 'application/json'
