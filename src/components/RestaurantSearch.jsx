@@ -6,54 +6,7 @@ import { faEdit, faTrashCan } from '@fortawesome/free-regular-svg-icons';
 import NavBarManu from "./NavBarManu ";
 
 export default class RestaurantSearch extends Component {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     searchText: null,
-  //     noData: false,
-  //     lastSearch: "",
-  //   }
-  // }
-
-  // search(key) {
-  //   console.warn(key)
-  //   fetch("http://localhost:3000/restaurant?q=" + key).then((data) => {
-  //     data.json().then((resp) => {
-  //       console.warn("resp", resp)
-  //       if (resp.length > 0) {
-  //         this.setState({ searchText: resp, noData: false })
-  //       }
-  //       else {
-  //         // set noData to true only if the search term is not empty
-  //       if (key !== '') {
-  //         this.setState({ noData: true, searchText: null })
-  //       }
-  //       }
-
-  //       // Update lastSearch here to reflect the current search term
-  //       this.setState({ lastSearch: key });
-
-  //     })
-  //   })
-  // }
-
-  // delete(id) {
-  //   fetch('http://localhost:3000/restaurant/' + id,
-  //     {
-  //       method: "DELETE",
-  //       // headers:{
-  //       //     'Content-Type':'application/json'
-  //       // },
-  //     }).then((result) => {
-  //       result.json().then((resp) => {
-  //         alert("Restaurant has heen Delete")
-  //         this.search(this.state.lastSearch);
-  //       })
-  //     })
-
-
-  // }
-
+  
   constructor() {
     super()
     this.state = {
@@ -65,7 +18,7 @@ export default class RestaurantSearch extends Component {
 search(key) {
     console.warn(key)
     this.setState({lastSearch:key})
-    fetch("http://localhost:3000/restaurant?q=" + key).then((data) => {
+    fetch("https://akashgole21.github.io/restaurant?q=" + key).then((data) => {
         data.json().then((resp) => {
             console.warn("resp", resp)
             if(resp.length>0)
@@ -81,7 +34,7 @@ search(key) {
 }
 delete(id)
 {
-    fetch('http://localhost:3000/restaurant/'+id,
+    fetch('https://akashgole21.github.io/restaurant/'+id,
     {
         method: "DELETE",
         // headers:{
