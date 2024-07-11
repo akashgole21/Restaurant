@@ -13,7 +13,7 @@ import RestaurantUpdate from "./components/RestaurantUpdate";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/restaurant">
+      <BrowserRouter>
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
           <Route exact path="/restaurant" element={<RestaurantList />} />
