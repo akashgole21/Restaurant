@@ -17,7 +17,7 @@ const RestaurantUpdate = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/restaurant/${id}`);
+        const response = await fetch(`https://akashgole21.github.io/restaurant/${id}`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -40,7 +40,7 @@ const RestaurantUpdate = () => {
 
   const updateRestaurant = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/restaurant/${id}`, {
+      const response = await fetch(`https://akashgole21.github.io/restaurant/${id}`, {
         method: "PUT",
         headers: {
           'Content-Type': 'application/json'
