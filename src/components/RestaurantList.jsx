@@ -18,7 +18,7 @@ export default class RestaurantList extends Component {
   }
 
   getData() {
-    fetch("http://localhost:3000/restaurant").then((response) => {
+    fetch("https://akashgole21.github.io/restaurant").then((response) => {
             response.json().then((result) => {
                 this.setState({ list: result })
             })
@@ -26,7 +26,7 @@ export default class RestaurantList extends Component {
   }
 
   delete(id) {
-    fetch('http://localhost:3000/restaurant/'+id,
+    fetch('https://akashgole21.github.io/restaurant/'+id,
     {
       method:"DELETE",
       // headers:{
