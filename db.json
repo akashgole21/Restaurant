@@ -1,0 +1,46 @@
+{
+  "login": [
+    {
+      "name": "akash",
+      "password": "abc@123",
+      "id": "a067"
+    }
+  ],
+  "restaurant": [
+    {
+      "id": "1",
+      "name": "Pizza Hut",
+      "address": "Noida",
+      "rating": "4.5",
+      "email": "pizzahut@test.com"
+    },
+    {
+      "id": "2",
+      "name": "McDonald",
+      "address": "Pune",
+      "rating": "4.3",
+      "email": "mcdonald@test.com"
+    },
+    {
+      "id": "3",
+      "name": "Dominos",
+      "address": "Mumbai",
+      "rating": "4.0",
+      "email": "dominos@test.com"
+    },
+    {
+      "id": "4",
+      "name": "BBQ Nation",
+      "address": "Delhi",
+      "rating": "4.2",
+      "email": "bbqnation@test.com"
+    },
+    {
+      "name": "Palange Biryani",
+      "email": "palange@test.com",
+      "rating": "4.7",
+      "address": "Pune",
+      "id": "5"
+    }
+  ]
+}

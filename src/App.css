@@ -1,0 +1,11 @@
+
+
+.form-style .form-control{
+ width: 30%;
+ margin-right: 20px;
+}
+
+.form-style button {
+    padding: 6px 35px;
+    width: 30%;
+}
