@@ -7,7 +7,7 @@ export default function NavBarManu () {
     <div>
       <Navbar expand="lg" className="bg-body-tertiary">
           <Container>
-            <Navbar.Brand href="/">Resto</Navbar.Brand>
+            <Navbar.Brand href="/restaurant">Resto</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
@@ -15,7 +15,7 @@ export default function NavBarManu () {
                   <Link to="/">Home</Link>
                 </Nav.Link> */}
                 <Nav.Link>
-                  <Link to="/">List</Link>
+                  <Link to="/restaurant">List</Link>
                 </Nav.Link>
                 <Nav.Link>
                   <Link to="/create">Add</Link>
